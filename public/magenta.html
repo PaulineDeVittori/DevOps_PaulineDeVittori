@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Générateur de couleurs</title>
+  <link rel="stylesheet" href="magenta.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="magenta">MAGENTA</h1>
+    <h1 class="titre">Générateur de couleurs aléatoires</h1>
+    
+    <button id="generateColorButton">Générer une couleur</button>
+    
+    <div id="colorDisplay" class="color-display">
+      <p id="colorName"></p>
+      <p id="hexCode"></p>
+      <p id="rgbCode"></p>
+      <div id="colorImage" class="color-image"></div>
+    </div>
+
+    <button id="saveColorButton" style="display:none;">Sauvegarder la couleur</button>
+
+    <h2>Vos couleurs préférées</h2>
+    <div id="favoritesContainer" class="favorites-container">
+      
+    </div>
+  </div>
+
+  <script src="magenta.js"></script>
+</body>
+</html>
