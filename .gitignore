@@ -6,4 +6,5 @@
 *.DS_Store
 
 # Ignorer les dépendances Node.js (si besoin)
+/.idea/
 node_modules/
