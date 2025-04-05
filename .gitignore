@@ -1,0 +1,9 @@
+# Fichiers spécifiques à VS Code
+.vscode/
+
+# Ignorer les fichiers système et de logs
+*.log
+*.DS_Store
+
+# Ignorer les dépendances Node.js (si besoin)
+node_modules/
