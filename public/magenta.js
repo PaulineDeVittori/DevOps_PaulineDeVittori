@@ -46,6 +46,8 @@ function getColorName(hex) {
     '#000000': 'Noir',
     '#FFFFFF': 'Blanc',
     '#808080': 'Gris',
+    '#8B0000': 'Rouge foncé',
+    
 
   };
   return colorNames[hex.toUpperCase()] || null;
