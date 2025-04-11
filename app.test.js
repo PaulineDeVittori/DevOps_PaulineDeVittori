@@ -11,3 +11,33 @@ test('retourne false pour une liste non vide', () => {
 });
 
 // les deux tests sont passés
+
+
+
+const fs = require('fs');
+const path = require('path');
+const { addColorToFavorites } = require('./app');
+
+const favoritesFile = path.join(__dirname, 'favorites.json');
+let originalFavorites;
+
+beforeAll(() => {
+  if (fs.existsSync(favoritesFile)) {
+    originalFavorites = fs.readFileSync(favoritesFile, 'utf8');
+  }
+});
+
+afterAll(() => {
+  if (originalFavorites !== undefined) {
+    fs.writeFileSync(favoritesFile, originalFavorites);
+  }
+});
+
+test('addColorToFavorites ajoute une couleur au fichier JSON', () => {
+  const testColor = '#ABCDEF';
+  const updatedFavorites = addColorToFavorites(testColor);
+
+  expect(updatedFavorites).toContain(testColor);
+});
+
+//ce test passe aussi

@@ -46,8 +46,23 @@ app.listen(PORT, () => {
   console.log(`L'application écoute sur le port ${PORT}`);
 });
 
+
+//fonction à tester
 function isFavoritesListEmpty(list) {
   return Array.isArray(list) && list.length === 0;
 }
 
 module.exports = { isFavoritesListEmpty };
+
+//autre fonction pour la tester
+function addColorToFavorites(color) {
+  if (!color) {
+    throw new Error('Aucune couleur fournie');
+  }
+  const favorites = loadFavorites();
+  favorites.push(color);
+  saveFavorites(favorites);
+  return favorites;
+}
+
+module.exports = { app, addColorToFavorites };
