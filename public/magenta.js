@@ -47,7 +47,7 @@ function getColorName(hex) {
     '#FFFFFF': 'Blanc',
     '#808080': 'Gris',
     '#8B0000': 'Rouge foncé',
-    
+    '#35AB92': 'Couleur préférée de Gaïa'
 
   };
   return colorNames[hex.toUpperCase()] || null;

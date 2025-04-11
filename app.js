@@ -45,3 +45,9 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`L'application écoute sur le port ${PORT}`);
 });
+
+function isFavoritesListEmpty(list) {
+  return Array.isArray(list) && list.length === 0;
+}
+
+module.exports = { isFavoritesListEmpty };
