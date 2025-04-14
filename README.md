@@ -36,15 +36,15 @@ J'utilise différentes technologies :
 - **Node.js** : installer node.js
   ```bash
   npm install
-pour lancer l'application :
+  
+- pour lancer l'application : puis aller sur http://localhost:3000/
   ```bash
   node app.js
-puis aller sur http://localhost:3000/
 
-ou avec Docker :
+
+- ou avec Docker : puis aller sur http://localhost:8080/
   ```bash
   docker start <id du conteneur>
-puis aller sur http://localhost:8080/
 
 
 Dépôt à cloner
