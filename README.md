@@ -36,7 +36,16 @@ J'utilise différentes technologies :
 - **Node.js** : installer node.js
   ```bash
   npm install
+pour lancer l'application :
+  ```bash
   node app.js
+puis aller sur http://localhost:3000/
+
+ou avec Docker :
+  ```bash
+  docker start <id du conteneur>
+puis aller sur http://localhost:8080/
+
 
 Dépôt à cloner
    ```bash
