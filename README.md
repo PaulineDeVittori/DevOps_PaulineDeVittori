@@ -23,9 +23,20 @@ J'utilise différentes technologies :
 
 - **Suppression des couleurs sauvegardées** : Il est possible de supprimer une couleur de la liste des préférées en cliquant dessus.
 
+## Ce que j'ai fait
+
+- création du repo git et du lien avec le dossier local
+- j'ai créé le projet de page web du générateur de couleurs avec différentes branches pour les différentes features à ajouter
+- j'ai utilisé Node.js pour avoir un serveur web simple avec Express et pouvoir sauvegarder les couleurs préférées des utilisateurs
+- j'ai ajouté des test d'intégration continue CI/CD pour pouvoir tester mon application automatiquement et à chaque modification (le test est simple pour l'instant)
+- j'ai conteneurisé mon serveur grâce à Docker en ajoutant le fichier Dockerfile
+
 ## Installation
 
 - **Node.js** : installer node.js
+  ```bash
+  npm install
+  node app.js
 
 Dépôt à cloner
    ```bash
