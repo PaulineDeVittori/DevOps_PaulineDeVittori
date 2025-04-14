@@ -13,6 +13,9 @@ RUN npm install
 # Copiez le reste du code de l'application
 COPY app.js .
 
+# Copiez le répertoire public dans l'image
+COPY public ./public
+
 # Exposez le port sur lequel l'application Node.js écoute
 EXPOSE 3000
 
